@@ -8,7 +8,7 @@ function get(Client, msg) {
     if (!msg.input_ai) return;
     let request = app.textRequest(convert(msg.input_ai), {
         sessionId: msg.author.id,
-        timezone: "Europa/Madrid"
+        timezone: "Europa/London"
     });
 
     request.on("response", function(response) {
