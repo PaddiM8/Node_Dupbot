@@ -416,13 +416,13 @@ const Client = {
     blackList: require("../blackList.json"),
     statusColors: require("../data/statusColors"),
 
-    music: require("./music/music"),
+
     cah: require("./minigames/cahgamehandler"),
     events: require("./events/events"),
     graphs: require("./utils/graphs"),
-    discordbots: require("./utils/discordbots"),
+ 
     ai: require("./utils/ai"),
-    antispam: require("./utils/antispam"),
+   
     db: require("./utils/database"),
     welcome: require("./utils/welcome"),
 
