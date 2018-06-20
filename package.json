@@ -13,7 +13,7 @@
     "discord.js": "^11.3.0",
     "erlpack": "github:hammerandchisel/erlpack",
     "ffmpeg-binaries": "^3.2.2-3",
-    "gdax": "^0.8.0",
+   
     "google-auth-library": "^1.5.0",
     "googleapis": "^20.1.0",
     "jsonfile": "^3.0.1",
@@ -22,7 +22,7 @@
     "node-opus": "^0.2.7",
     "nodemon": "^1.17.4",
     "opusscript": "^0.0.3",
-    "plotly": "^1.0.6",
+
     "uws": "^0.14.5",
     "ytdl-core": "^0.20.4"
   },
