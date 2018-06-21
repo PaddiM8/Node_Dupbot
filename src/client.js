@@ -104,7 +104,7 @@ function setup() {
     Client.bot.shard.send({type: "connected"});
     Client.db.setup(Client);
     Client.events.start(Client);
-    Client.discordbots.set(Client);
+   
 
     for (let key of Client.bot.guilds) {
         if (Client.blackList.guilds.includes(key[0])) {
