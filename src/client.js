@@ -57,7 +57,7 @@ function run() {
 function recieveMessage(msg) {
     isCommand(msg).then((msg) => {
         if (!msg.interact && !msg.isCommand) return msg;
-        if (Client.antispam.check(Client, msg)) return msg;
+       
 
         if (msg.isCommand) {
             command(msg);
