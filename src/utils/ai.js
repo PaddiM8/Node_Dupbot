@@ -68,7 +68,7 @@ function convertBack(phrase) {
 
 function personalize(Client, msg, response) {
     return response
-        .replace(/BOTNAME/g, msg.client.user.username;
+        .replace(/BOTNAME/g, msg.client.user.username);
 }
 
 module.exports = {
