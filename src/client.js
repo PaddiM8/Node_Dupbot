@@ -249,7 +249,7 @@ function execute(msg) {
 function isCommand(msg) {
     return new Promise((resolve, reject) => {
         if (msg.author.bot || msg.webhookID) return resolve(msg);
-        let botname = msg.guild.members.get(Client.bot.user.id).nickname.toLowerCase()
+        let botname = "dup"; //msg.guild.members.get(Client.bot.user.id).nickname.toLowerCase()
         getPrefix(msg).then((prefix) => {
             msg.prefix = prefix;
             if (msg.content.slice(0, prefix.length).toLowerCase() === prefix.toLowerCase()) {
