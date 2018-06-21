@@ -419,7 +419,7 @@ const Client = {
 
     cah: require("./minigames/cahgamehandler"),
     events: require("./events/events"),
-    graphs: require("./utils/graphs"),
+
  
     ai: require("./utils/ai"),
    
