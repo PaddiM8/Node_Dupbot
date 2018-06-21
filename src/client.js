@@ -249,7 +249,7 @@ function execute(msg) {
 function isCommand(msg) {
     return new Promise((resolve, reject) => {
         if (msg.author.bot || msg.webhookID) return resolve(msg);
-
+        let botname = msg.guild.members.get(bot.user.id).nickname.toLowerCase()
         getPrefix(msg).then((prefix) => {
             msg.prefix = prefix;
             if (msg.content.slice(0, prefix.length).toLowerCase() === prefix.toLowerCase()) {
@@ -265,7 +265,7 @@ function isCommand(msg) {
                 } else {
                     resolve(msg);
                 }
-            } else if (msg.content.toLowerCase().includes(msg.client.user.username.toLowerCase())) {
+            } else if (msg.content.toLowerCase().includes(botname)) {
                 if (msg.content.toLowerCase().includes("https://dupbit.com/dupbot")) return resolve(msg);
                 msg.interact = true;
 
