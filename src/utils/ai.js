@@ -45,8 +45,8 @@ function get(Client, msg) {
         }
     });
 
-    request.on("error", () => {
-        Client.send(msg, "Something did go wrong :disappointed:");
+    request.on("error", function (error) {
+        Client.send(msg, error;
     });
 
     request.end();
