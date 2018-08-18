@@ -46,7 +46,7 @@ function get(Client, msg) {
     });
 
     request.on("error", function (error) {
-        Client.send(msg, error);
+        Client.send(msg, request);
     });
 
     request.end();
